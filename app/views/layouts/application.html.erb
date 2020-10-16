@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
   <head>
     <title>FirstRails</title>
     <%= csrf_meta_tags %>
@@ -11,5 +11,10 @@
 
   <body>
     <%= yield %>
+
+    <footer>
+      BeCode.org © 2020 <br><hr>
+      <%=image_tag("logo.png", :class => 'image_style', :style => 'max-width: 5%; height: auto')%>
+    </footer>
   </body>
 </html>
